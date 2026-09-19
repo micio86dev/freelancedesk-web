@@ -1,0 +1,168 @@
+:root {
+    font-family: Inter, system-ui, sans-serif;
+    color: #18212f;
+    background: #f6f7fb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 8px;
+    padding: .65rem .9rem;
+    background: #18212f;
+    color: white;
+}
+
+button.danger {
+    background: #b42318;
+}
+
+.topbar {
+    min-height: 64px;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.topbar nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 3px 12px rgb(15 23 42 / .04);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.grid .card {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.grid strong {
+    font-size: 1.7rem;
+}
+
+.form {
+    display: grid;
+    gap: 1rem;
+}
+
+.form label {
+    display: grid;
+    gap: .35rem;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: .7rem;
+    border: 1px solid #cfd5df;
+    border-radius: 8px;
+    background: white;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.auth-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+
+.auth-page .card {
+    width: min(420px, 100%);
+}
+
+.error {
+    color: #b42318;
+}
+
+.two-cols {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .75rem;
+}
+
+@media (max-width: 760px) {
+    .two-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .topbar {
+        padding: 1rem;
+        align-items: flex-start;
+    }
+
+    .topbar nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.page-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.section {
+    margin-top: 2rem;
+}
