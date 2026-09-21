@@ -35,7 +35,7 @@ async function submit() {
             <p v-if="error" class="error">{{ error }}</p>
 
             <button :disabled="loading">{{ loading ? 'Accesso…' : 'Accedi'
-            }}</button>
+                }}</button>
 
             <RouterLink to="/register">Crea account</RouterLink>
         </form>
